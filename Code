@@ -1,0 +1,24 @@
+
+def F(n):
+    if n == 0: return 0
+    elif n == 1: return 1
+    else: return F(n-1)+F(n-2)
+def is_prime(n):
+    for i in range(3, n):
+        if n % i == 0:
+            return False
+    return True
+n= int(input("Enter a number: "))
+k=0
+while k<n:
+    if F(k)%3==0:
+        print "Buzz"
+    elif F(k)%5==0:
+        print "Fizz" 
+    elif F(k)%15==0:
+        print "FizzBuzz" 
+    elif is_prime(k):
+        print "BuzzFizz"
+    else:
+        print F(k)
+    k=k+1
