@@ -1,7 +1,0 @@
-Q:How do you test decide whether a given set of real-valued observations are drawn from a Gaussian distribution? Given a streaming time series of real-valued, scalar observations, describe an online algorithm for determining a linear Gaussian model of these observations as a function of time step.
-
-A:
-Step 1 : calculate mean and standard deviation .
-Step 2: using a for loop we calculate how many values fall under different catagories 
-(mean:mean-standard deviaton),(mean:mean+standard deviaton),(mean-standard deviaton:mean-2*standard deviaton),(mean+standard deviaton:mean+2*standard deviaton),(mean+2*standard deviaton:mean+3*standard deviaton)..etc.
-Step 3: compare the percentage of values that falls under each one the category with the desired distrubtion  
